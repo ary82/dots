@@ -1,8 +1,10 @@
 #!/bin/bash
+# COMPILE AND RUN C OR C++ FILES
 
+# Name of output executable
 EXECNAME=$(cut --delimiter=. --fields=1 <<<$1)
 
-# remove if executable exists
+# remove executable if it exists
 if [ -f "../build/$EXECNAME" ]; then
   echo "Removed previous executable"
 	rm "../build/$EXECNAME"
