@@ -1,0 +1,9 @@
+#!/bin/bash
+
+EXECNAME=$( cut --delimiter=. --fields=1 <<< $1 );
+# Compile
+g++ -ggdb -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror $1 -o "../build/$EXECNAME";
+# Make executable
+chmod +x "../build/$EXECNAME";
+# run
+../build/$EXECNAME;
