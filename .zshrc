@@ -8,11 +8,11 @@ export ZSH="$HOME/.oh-my-zsh"
 # Use pywall with swww
 wal() {
   wall=$(find ~/Pictures/Wallpapers -maxdepth 1 -type f | shuf -n 1)
-  swww img $wall --transition-type wipe --transition-step 5 --transition-fps 60
+  swww img $wall --transition-type wipe --transition-fps 60
 }
 awal() {
   wall=$(find ~/Pictures/Wallpapers/Anime -maxdepth 1 -type f | shuf -n 1)
-  swww img $wall --transition-type wipe --transition-step 5 --transition-fps 60
+  swww img $wall --transition-type wipe --transition-fps 60
 }
 
 # Set name of the theme to load --- if set to "random", it will

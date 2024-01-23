@@ -17,7 +17,6 @@
 "margin-right": 8,
 
 "modules-left": [
-	"custom/menu",
 	"custom/separator#blank_2", 
 	"hyprland/workspaces#4",
 	"custom/separator#blank_2",
