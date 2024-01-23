@@ -1,9 +1,16 @@
 #!/bin/bash
 
-EXECNAME=$( cut --delimiter=. --fields=1 <<< $1 );
+EXECNAME=$(cut --delimiter=. --fields=1 <<<$1)
+
+# remove if executable exists
+if [ -f "../build/$EXECNAME" ]; then
+  echo "Removed previous executable"
+	rm "../build/$EXECNAME"
+fi
+
 # Compile
-g++ -ggdb -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror $1 -o "../build/$EXECNAME";
-# Make executable
-chmod +x "../build/$EXECNAME";
-# run
-../build/$EXECNAME;
+g++ -ggdb -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Werror $1 -o "../build/$EXECNAME" &&
+	# Make executable
+	chmod +x "../build/$EXECNAME" &&
+	# run
+	../build/$EXECNAME
