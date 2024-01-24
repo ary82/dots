@@ -2,10 +2,10 @@
 
 CHECK=$(pidof wlsunset)
 if [ $CHECK ]; then
-	pkill wlsunset
-	notify-send "Gamma filter off"
+	pkill wlsunset &
+	notify-send --urgency=low "Gamma filter off"
 else
 	wlsunset &
 	disown
-	notify-send "Gamma filter on"
+	notify-send --urgency=low "Gamma filter on"
 fi
