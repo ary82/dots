@@ -20,14 +20,16 @@
 	"custom/separator#blank_2", 
 	"hyprland/workspaces#4",
 	"custom/separator#blank_2",
-	"mpris",
 	"tray",
+	"custom/separator#blank_2",
+	"mpris",
 	],
 "modules-center": [
 	"clock",
 	],
 "modules-right": [
 	"group/motherboard",
+  "network",
 	"custom/separator#blank_2",
 	"group/laptop",
 	"custom/separator#blank_2",
