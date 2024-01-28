@@ -123,3 +123,6 @@ unalias lsa
 alias l='lsd'
 alias la='lsd -lAh'
 alias ll='lsd -lh'
+alias ff='fastfetch'
+alias nc='nmcli connection show'
+alias jd='cd; cd "$(find -type d | fzf)"'
