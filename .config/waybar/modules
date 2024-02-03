@@ -143,6 +143,8 @@
       "temperature",
       "custom/separator#blank",
       "disk",
+      "custom/separator#blank",
+      "disk#spcc",
       ]	
 },
   
@@ -257,6 +259,17 @@
     "interval": 60,
     //"format": "󰋊",
     "path": "/",
+    //"format-alt-click": "click",
+    "format": "{percentage_used}% 󰋊",
+    //"tooltip": true,
+    "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
+    "on-click-right": "kitty --title btop sh -c 'btop'"
+},
+
+"disk#spcc": {
+    "interval": 60,
+    //"format": "󰋊",
+    "path": "/mnt/spcc",
     //"format-alt-click": "click",
     "format": "{percentage_used}% 󰋊",
     //"tooltip": true,
@@ -601,4 +614,11 @@
     "interval": "once",
     "tooltip": false
 },
+"custom/todo": {
+  "exec": "~/.config/hypr/scripts/todo.sh",
+  "return-type": "json",
+  "format": "{} todos",
+  "on-click": "kitty -e nvim ~/todo.txt",
+  "interval": 5,
+  }
 }

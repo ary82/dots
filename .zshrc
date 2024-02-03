@@ -14,6 +14,15 @@ awal() {
   wall=$(find ~/Pictures/Wallpapers/Anime -maxdepth 1 -type f | shuf -n 1)
   swww img $wall --transition-type wipe --transition-fps 60
 }
+function zshaddhistory() {
+  emulate -L zsh
+  if ! [[ "$1" =~ "(^ |^redqu)" ]] ; then
+      print -sr -- "${1%%$'\n'}"
+      fc -p
+  else
+      return 1
+  fi
+}
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
