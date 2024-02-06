@@ -204,7 +204,8 @@
     "format-time": "{H}h {M}min",
     "tooltip": true,
     "tooltip-format": "{timeTo} {power}w",
-    "on-click-right": "~/.config/hypr/scripts/lenopow.sh",
+    "on-click": "~/.config/hypr/scripts/lenopow.sh",
+    "on-click-right": "~/.config/hypr/scripts/lenopow.sh --toggle",
 },
       
 "bluetooth": {
