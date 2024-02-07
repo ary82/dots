@@ -22,9 +22,11 @@
 	"custom/separator#blank_2",
 	"tray",
 	"custom/separator#blank_2",
+  "custom/todo",
+	"custom/separator#blank_2",
 	"mpris",
 	"custom/separator#blank_2",
-  "custom/todo",
+  "mpd",
 	],
 "modules-center": [
 	"clock",
