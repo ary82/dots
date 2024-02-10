@@ -18,13 +18,13 @@
 
 "modules-left": [
 	"hyprland/workspaces#4",
-	"custom/separator#blank_2",
+	"custom/separator#blank",
 	"tray",
-	"custom/separator#blank_2",
+	"custom/separator#blank",
   "custom/todo",
-	"custom/separator#blank_2",
+	"custom/separator#blank",
 	"mpris",
-	"custom/separator#blank_2",
+	"custom/separator#blank",
   "mpd",
 	],
 "modules-center": [

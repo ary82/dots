@@ -14,6 +14,6 @@ cat ~/.cache/swww/eDP-1 | xargs -I {} mv {} ~/Pictures/Wallpapers/Anime/old/
 
 # Move the old images back to the main folder
 OLD_FILES=$(find ~/Pictures/Wallpapers/Anime/old -maxdepth 1 -type f | wc -l)
-if [[ $OLD_FILES -gt 50 ]]; then
+if [[ $OLD_FILES -gt 100 ]]; then
 	mv ~/Pictures/Wallpapers/Anime/old/* ~/Pictures/Wallpapers/Anime/
 fi
