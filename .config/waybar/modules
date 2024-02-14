@@ -649,7 +649,7 @@
   "exec": "~/.config/hypr/scripts/todo.sh",
   "return-type": "json",
   "format": "{} todos",
-  "on-click": "kitty -e nvim ~/todo.txt",
+  "on-click": "kitty --title=todo_edit -e nvim ~/todo.txt",
   "interval": 5,
   }
 }
