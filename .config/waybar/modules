@@ -651,5 +651,11 @@
   "format": "{} todos",
   "on-click": "kitty --title=todo_edit -e nvim ~/todo.txt",
   "interval": 5,
+  },
+"custom/schedule": {
+  "exec": "~/.config/hypr/scripts/schedule.sh",
+  "return-type": "json",
+  "format": "{}",
+  "interval": 5,
   }
 }

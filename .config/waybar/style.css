@@ -346,6 +346,9 @@ label:focus {
 #custom-todo {
   color: @accent6;
 }
+#custom-schedule {
+  color: @accent1;
+}
 #mpris {
   color: @accent3;
 }
