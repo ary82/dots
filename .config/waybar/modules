@@ -656,6 +656,7 @@
   "exec": "~/.config/hypr/scripts/schedule.sh",
   "return-type": "json",
   "format": "{}",
+  "on-click": "kitty --title=schedule_edit -e nvim ~/schedule.txt",
   "interval": 5,
   }
 }
