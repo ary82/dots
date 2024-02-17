@@ -3,17 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-# Pywall term colors
-# (cat ~/.cache/wal/sequences &)
-# Use pywall with swww
-wal() {
-  wall=$(find ~/Pictures/Wallpapers -maxdepth 1 -type f | shuf -n 1)
-  swww img $wall --transition-type wipe --transition-fps 60
-}
-awal() {
-  wall=$(find ~/Pictures/Wallpapers/Anime -maxdepth 1 -type f | shuf -n 1)
-  swww img $wall --transition-type wipe --transition-fps 60
-}
+
 function zshaddhistory() {
   emulate -L zsh
   if ! [[ "$1" =~ "(^ |^redqu)" ]] ; then
@@ -135,3 +125,4 @@ alias ll='lsd -lh'
 alias ff='fastfetch'
 alias nc='nmcli connection show'
 alias jd='cd; cd "$(find -type d | fzf)"'
+alias cam='ffmpeg -re -stream_loop -1 -i Videos/Rec.mp4 -map 0:v -f v4l2 /dev/video2'
