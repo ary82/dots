@@ -18,7 +18,7 @@ function zshaddhistory() {
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="gnzh"
+ZSH_THEME="example"
 # Add newline after commands
 precmd() {
     precmd() {
@@ -86,7 +86,7 @@ precmd() {
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages colorize z zsh-history-substring-search you-should-use)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting colored-man-pages colorize z zsh-history-substring-search you-should-use nix-zsh-completions nix-shell)
 
 source $ZSH/oh-my-zsh.sh
 
