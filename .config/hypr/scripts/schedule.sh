@@ -2,7 +2,8 @@
 
 # This Script reads schedule from a tab separated file from $INPUT and prints out the current task
 # For use with Waybar
-# Format for schedule: <hh:mm> TAB <hh:mm> TAB <todo> TAB <tooltip>
+# Format for schedule: <hh:mm> TAB <hh:mm> TAB <todo> TAB <tooltip> TAB <command>
+# See also: ./work-command.sh
 
 INPUT="/home/ary/schedule.txt"
 TIME=$(date "+%H:%M")
