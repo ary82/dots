@@ -1,6 +1,6 @@
 #!/bin/bash
-## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# Script for Monitor backlights (if supported) using brightnessctl
+
+# Script for Monitor backlights using brightnessctl
 
 iDIR="$HOME/.config/swaync/icons"
 notification_timeout=1000

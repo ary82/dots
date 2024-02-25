@@ -18,7 +18,7 @@ function zshaddhistory() {
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="example"
+ZSH_THEME="gnzh-nix"
 # Add newline after commands
 precmd() {
     precmd() {
@@ -123,6 +123,13 @@ alias l='lsd'
 alias la='lsd -lAh'
 alias ll='lsd -lh'
 alias ff='fastfetch'
+alias vi='nvim'
 alias nc='nmcli connection show'
 alias jd='cd; cd "$(find -type d | fzf)"'
 alias cam='ffmpeg -re -stream_loop -1 -i Videos/Rec.mp4 -map 0:v -f v4l2 /dev/video2'
+alias cr='/home/ary/.local/bin/scripts/cr.sh'
+alias xkcd='/home/ary/.local/bin/scripts/xkcd.sh'
+# kw
+export fpath=(/home/ary/.local/lib/kw $fpath)
+autoload compinit && compinit -i
+PATH=/home/ary/.local/bin:$PATH # kw
