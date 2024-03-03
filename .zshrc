@@ -129,6 +129,8 @@ alias jd='cd; cd "$(find -type d | fzf)"'
 alias cam='ffmpeg -re -stream_loop -1 -i Videos/Rec.mp4 -map 0:v -f v4l2 /dev/video2'
 alias cr='/home/ary/.local/bin/scripts/cr.sh'
 alias xkcd='/home/ary/.local/bin/scripts/xkcd.sh'
+alias dj='/home/ary/.local/bin/newscripts/dj.sh'
+alias vid='/home/ary/.local/bin/newscripts/vid.sh'
 # kw
 export fpath=(/home/ary/.local/lib/kw $fpath)
 autoload compinit && compinit -i
