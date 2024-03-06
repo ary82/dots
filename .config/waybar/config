@@ -1,7 +1,3 @@
-/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
-
-// ### Minimal - Long ### //
-
 {
 "include": "~/.config/waybar/modules",
 "layer": "top",
@@ -11,7 +7,6 @@
 "position": "top",
 "spacing": 6,
 "fixed-center": true,
-"ipc": true,
 "margin-top": 3,
 "margin-left": 8,
 "margin-right": 8,
@@ -25,13 +20,13 @@
   "custom/schedule",
 	"custom/separator#blank",
 	"mpris",
-	"custom/separator#blank",
-  "mpd",
 	],
 "modules-center": [
 	"clock",
 	],
 "modules-right": [
+  "mpd",
+	"custom/separator#blank",
 	"group/motherboard",
   "network",
 	"custom/separator#blank_2",
